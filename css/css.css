@@ -64,13 +64,19 @@ header {
     font-size: 18px;
 }
 
-.chef {
-    font-family: 'Georgia', serif;
-    background-color: #f5eadd;
-    color: #333;
-}
+
 
 .chef {
+     font-family: 'Georgia', serif;
+    background-color: #f5eadd;
+    color: white;
+    width: 97.6%;
+    height: 100vh;
+    background-image: url("../imagenes/chef.jpeg");
+    background-size: cover;
+    background-position-y: -250px;
+   
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -81,7 +87,7 @@ header {
 }
 
 .chef-container {
-    width: 500px;
+    width: 50%;
 }
 
 .chef-container h1 {
@@ -98,7 +104,7 @@ header {
 .chef-container p {
     margin-top: 1rem;
     font-size: 16px;
-    color: #555;
+    color: white;
 }
 
 .btn {
@@ -112,11 +118,7 @@ header {
     font-weight: bold;
 }
 
-.chef-image img {
-    width: 100%;
-    max-width: 420px;
-    background-size: cover;
-}
+
 
 .promotion {
     display: flex;
@@ -142,7 +144,7 @@ header {
 }
 
 .circle-content img {
-    width: 50px;
+    width: 25%;
     margin-bottom: 1rem;
 }
 
@@ -356,6 +358,8 @@ header {
     .chef {
         flex-direction: column;
         text-align: center;
+        background-repeat: no-repeat;
+        width: 96.5%;
     }
 
     .chef-container {
@@ -394,8 +398,8 @@ header {
     }
 
     .nav-links {
-        flex-direction: column;
-        gap: 0.5rem;
+        display: flex;
+        display: none;
     }
 }
 
@@ -404,9 +408,16 @@ header {
     .navbar {
         padding: 0.5rem;
     }
+    .chef{
+        width: 93%;
+    }
 
     .logo {
         font-size: 28px;
+    }
+    .nav-links {
+        display: flex;
+        display: none;
     }
 
     .nav-links li a {
@@ -432,7 +443,6 @@ header {
         width: 140px;
         height: 140px;
     }
-
     .circle-content h2 {
         font-size: 16px;
     }
